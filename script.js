@@ -24,8 +24,8 @@ choiceGunting.addEventListener('click', function(){
     const imgComp = document.querySelector('.img-computer');
     imgComp.setAttribute('src', `img-comp/${computer}.png`);
 
-    const info = document.querySelector('.info');
-    info.innerHTML = result;
+    const resultFinal = document.querySelector('.result');
+    resultFinal.innerHTML = result;
 })
 
 choiceBatu.addEventListener('click', function(){
@@ -36,8 +36,8 @@ choiceBatu.addEventListener('click', function(){
     const imgComp = document.querySelector('.img-computer');
     imgComp.setAttribute('src', `img-comp/${computer}.png`);
 
-    const info = document.querySelector('.info');
-    info.innerHTML = result;
+    const resultFinal = document.querySelector('.result');
+    resultFinal.innerHTML = result;
 })
 
 choiceKertas.addEventListener('click', function(){
@@ -48,6 +48,6 @@ choiceKertas.addEventListener('click', function(){
     const imgComp = document.querySelector('.img-computer');
     imgComp.setAttribute('src', `img-comp/${computer}.png`);
 
-    const info = document.querySelector('.info');
-    info.innerHTML = result;
+    const resultFinal = document.querySelector('.result');
+    resultFinal.innerHTML = result;
 })

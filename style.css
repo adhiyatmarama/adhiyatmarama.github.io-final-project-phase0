@@ -52,7 +52,6 @@ table {
   }
 
 body {
-    background-image: url(img/bg.png);
     font-family: Gotham;
 }
 h1 {
@@ -76,7 +75,6 @@ p {
     margin-bottom: 30px;
     border-radius: 30px;
     text-align: center;
-    line-height: 60px;
     color: #000080;
     font-size: 68px;
 }
@@ -88,12 +86,11 @@ p {
     position: relative;
 }
 
-.area-komputer {
+.computer-area {
     width: 300px;
     height: 560px;
     margin: 5px auto;
-    background-color: lightblue;
-    background: linear-gradient(to bottom, rgba(179,220,237,1) 0%, rgb(35, 179, 223) 100%);
+    background-color: lightskyblue;
     position: relative;
     padding-top: 40px;
     box-sizing: border-box;
@@ -101,18 +98,17 @@ p {
     float: right
 }
 
-.area-player {
+.player-area {
     width: 300px;
     height: 560px;
     margin: 5px auto;
-    background-color: red;
-    background: linear-gradient(to bottom, rgba(210,255,82,1) 0%, rgb(248, 234, 42) 100%);
+    background-color: lightgoldenrodyellow;
     position: relative;
     border-radius: 40px 0px 0px 40px;
     float: left
 }
 
-.info {
+.result {
     width: 150px;
     height: 60px;
     border: 5px solid rgb(35, 11, 124);
@@ -123,12 +119,10 @@ p {
     margin-top: 310px;
     margin-bottom: 30px;
     background-color: white;
-    border-radius: 30px;
     text-align: center;
     line-height: 60px;
     color: #000080;
     font-size: 30px;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
 
 ul {
