@@ -1,0 +1,169 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Game Suit Jepang */
+@font-face {
+    font-family: "Gotham";
+    src: url(font/GothamNarrow-Black.otf);
+    font-style: normal;
+    font-weight: normal
+  }
+
+body {
+    background-image: url(img/bg.png);
+    font-family: Gotham;
+}
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: #000080;
+}
+
+p {
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    top: 50%;
+    margin-top: 250px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 60px;
+    color: #000080;
+    font-size: 68px;
+}
+
+.playing-area {
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+}
+
+.area-komputer {
+    width: 300px;
+    height: 560px;
+    margin: 5px auto;
+    background-color: lightblue;
+    background: linear-gradient(to bottom, rgba(179,220,237,1) 0%, rgb(35, 179, 223) 100%);
+    position: relative;
+    padding-top: 40px;
+    box-sizing: border-box;
+    border-radius: 0px 40px 40px 0px;
+    float: right
+}
+
+.area-player {
+    width: 300px;
+    height: 560px;
+    margin: 5px auto;
+    background-color: red;
+    background: linear-gradient(to bottom, rgba(210,255,82,1) 0%, rgb(248, 234, 42) 100%);
+    position: relative;
+    border-radius: 40px 0px 0px 40px;
+    float: left
+}
+
+.info {
+    width: 150px;
+    height: 60px;
+    border: 5px solid rgb(35, 11, 124);
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    top: 50%;
+    margin-top: 310px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 60px;
+    color: #000080;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+ul {
+    padding-top: 40px;
+    padding-left: 25px;
+}
+
+li {
+    display: inline-block;
+    margin: 10px 40px;
+}
+
+img {
+    width: 130px;
+    height: 130px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.img-computer {
+    margin-top: 165px;
+    margin-left: 100px;
+}
+
+.gunting, .batu, .kertas {
+    position: relative;
+    top:0;
+    cursor: pointer;
+}
+
+.gunting:hover, .batu:hover, .kertas:hover, .active {
+    box-shadow: 0 0 10px 5px blue;
+}
+
+.gunting:active, .batu:active, .kertas:active {
+    top: 2px;
+}
