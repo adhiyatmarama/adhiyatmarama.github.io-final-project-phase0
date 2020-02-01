@@ -6,7 +6,7 @@ function computerChoice(){
 }
 
 function getResult(computer, player){
-    if(player === computer) return 'SERI!';
+    if(player === computer) return 'SERI:|';
     if(player === 'gunting') return (computer === 'kertas') ? 'MENANG!' : 'KALAH:(';
     if(player === 'batu') return (computer === 'gunting') ? 'MENANG!' : 'KALAH:(';
     if(player === 'kertas') return (computer === 'batu') ? 'MENANG!' : 'KALAH:(';
